@@ -9,11 +9,11 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 
 // connect to mongodb
-if (app.get('env') === 'production') {
+//if (app.get('env') === 'production') {
   mongoose.connect("mongodb://admin:admin@ds030829.mlab.com:30829/chirp-test");
-} else {
-  mongoose.connect("mongodb://localhost/chirp-test");
-}
+//} else {
+//  mongoose.connect("mongodb://localhost/chirp-test");
+//}
 // initialize mongoose
 require('./models/models.js');
 
